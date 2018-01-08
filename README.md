@@ -33,12 +33,12 @@ The repository implements the following models:
 * `discrete-adgm-rbm`: ADGM with an `RBM(64,8)` prior,·
    trained using neural variational inference.
 * `rbm`: Regular Restricted Boltzmann Machine (RBM) trained with persistent contrastive divergence.
-* `vrbm`: Variational RBM, i.e. RBM trained with neural variational infernce using a mixture of ten Bernoulli's as the auxiliary helper distribution `q`.
+* `vrbm`: Variational RBM, i.e. RBM trained with neural variational infernce using a mixture of ten Bernoullis as the auxiliary helper distribution `q`.
 * `avrbm`: Auxiliary-variable Variational RBM, i.e. RBM trained with neural variational infernce using an auxiliary-variable distribution `q(x,a)` (parametrized with a neural network) as the helper distribution `q`.
 
 The models can be run on the following datasets:
 
-* `digits`: The UCI digits dataset. Use this for the RBM models.
+* `digits`: The UCI digits dataset. Use this for the RBM models (otherwise you'll get numerical issues and will 
 * `mnist`: Regular MNIST.
 * `binmnist`: Binarized MNIST, using the binarization from the IWAE (Burda et al.) paper.
 * `omniglot`: The Omniglot dataset.
@@ -73,6 +73,8 @@ optional arguments:
 
 The simplest way to use it is via the `Makefile` provided in the root dir; typing `make train` will start training. 
 You can specify the model, dataset, and other parameters by modifying the defaults in the `Makefile`.
+
+The default hyper-parameters on `avrbm` on the `digits` dataset are currently set incorrectly and are causing problems.
 
 ## Feedback
 
