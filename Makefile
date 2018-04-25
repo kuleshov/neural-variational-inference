@@ -6,7 +6,7 @@ NAME=experiment2
 
 LOGFOLDER=log
 DATASET=mnist
-MODEL=usbn
+MODEL=discrete-vae-rbm
 ALG=adam
 
 LR=3e-4
