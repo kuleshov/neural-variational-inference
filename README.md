@@ -15,9 +15,9 @@ The code uses Theano and Lasagne.
 To install this package, clone the git repo, and update your `PYTHONPATH` to include the folder.
 
 ```
-git clone https://github.com/kuleshov/deep-hybrid-models.git;
-cd deep-hybrid-models;
-source setenv.sh
+git clone https://github.com/kuleshov/neural-variational-inference/.git;
+cd neural-variational-inference/;
+source set_env.sh
 ```
 
 ## Models and Datasets
